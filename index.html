@@ -57,7 +57,7 @@
 
    tg.expand(); //расширяем на все окно  
 
-   tg.MainButton.text = "Enviar1"; //изменяем текст кнопки 
+   tg.MainButton.text = "Enviar2"; //изменяем текст кнопки 
    tg.MainButton.show();
    //tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
    //tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
@@ -88,7 +88,7 @@
    });
 
    Telegram.WebApp.onEvent('mainButtonClicked', function(){
-      tg.showProgress(false);
+      //tg.showProgress(false);
       tg.sendData("some string that we need to send"); 
       //при клике на основную кнопку отправляем данные в строковом виде
    });
